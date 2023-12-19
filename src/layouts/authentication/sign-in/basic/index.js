@@ -50,6 +50,10 @@ import borders from "assets/theme/base/borders";
 // Images
 import bgBasic from "assets/images/background-basic-auth.png";
 
+import routes from "routes";
+import { Route, Switch, Redirect, useLocation } from "react-router-dom";
+
+
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
 
@@ -240,11 +244,15 @@ function Basic() {
               &nbsp;&nbsp;&nbsp;&nbsp;Remember me
             </VuiTypography>
           </VuiBox>
+          
           <VuiBox mt={4} mb={1}>
-            <VuiButton color="info" fullWidth>
-              SIGN IN
-            </VuiButton>
+            <Link to='/dashboards/default'>
+              <VuiButton color="info" fullWidth>
+              SIGN In
+              </VuiButton>
+            </Link>
           </VuiBox>
+          
           <VuiBox mt={3} textAlign="center">
             <VuiTypography variant="button" color="text" fontWeight="regular">
               Don't have an account?{" "}

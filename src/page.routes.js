@@ -60,15 +60,19 @@ const pageRoutes = [
       {
         name: "Default",
         key: "default",
+        // src/layouts/dashboards/default
         route: "/dashboards/default",
       },
+      // src/layouts/dashboards/crm
       { name: "CRM", key: "crm", route: "/dashboards/crm" },
     ],
   },
+  
   {
     name: "Users",
     key: "users",
     icon: <IoPeople size="16px" color="white" />,
+    // src/layouts/pages/users
     collapse: [
       {
         name: "Reports",
@@ -82,21 +86,26 @@ const pageRoutes = [
       },
     ],
   },
+ 
   {
     name: "Profile",
     key: "profile",
     icon: <IoPerson size="16px" color="white" />,
+    // src/layouts/pages/profile
     collapse: [
+      
       {
         name: "Profile Overview",
         key: "profile-overview",
         route: "/pages/profile/profile-overview",
       },
+      
       {
         name: "Teams",
         key: "teams",
         route: "/pages/profile/teams",
       },
+      
       {
         name: "All Projects",
         key: "all-projects",
@@ -104,6 +113,7 @@ const pageRoutes = [
       },
     ],
   },
+  
   {
     name: "Extra",
     key: "extra",
@@ -112,22 +122,28 @@ const pageRoutes = [
       {
         name: "Pricing Page",
         key: "pricing-page",
+        // src/layouts/pages/pricing-page
         route: "/pages/pricing-page",
       },
       { name: "RTL", key: "rtl", route: "/pages/rtl" },
+      // src/layouts/pages/widgets
       { name: "Widgets", key: "widgets", route: "/pages/widgets" },
+      // src/layouts/pages/charts
       { name: "Charts", key: "charts", route: "/pages/charts" },
       {
         name: "Alerts",
         key: "alerts",
+        // src/layouts/pages/alerts
         route: "/pages/alerts",
       },
     ],
   },
+ 
   {
     name: "Account",
     key: "account",
     icon: <IoBuild size="16px" color="white" />,
+    // src/layouts/pages/account
     collapse: [
       {
         name: "Settings",
@@ -146,10 +162,12 @@ const pageRoutes = [
       },
     ],
   },
+ 
   {
     name: "Projects",
     key: "projects",
     icon: <IoDocument size="16px" color="white" />,
+    // src/layouts/pages/projects
     collapse: [
       {
         name: "General",
@@ -163,6 +181,7 @@ const pageRoutes = [
       },
     ],
   },
+
   {
     name: "Orders",
     key: "orders",
@@ -171,19 +190,23 @@ const pageRoutes = [
       {
         name: "Order List",
         key: "order-list",
+        // src/layouts/ecommerce/orders/order-list
         route: "/ecommerce/orders/order-list",
       },
       {
         name: "Order Details",
         key: "order-details",
+        // src/layouts/ecommerce/orders/order-details
         route: "/ecommerce/orders/order-details",
       },
     ],
   },
+
   {
     name: "General",
     key: "general",
     icon: <IoDocuments size="16px" color="white" />,
+    // src/layouts/ecommerce
     collapse: [
       {
         name: "Overview",
@@ -205,16 +228,19 @@ const pageRoutes = [
       {
         name: "New Product",
         key: "new-product",
+        // src/layouts/ecommerce/products/new-product
         route: "/ecommerce/products/new-product",
       },
       {
         name: "Edit Product",
         key: "edit-product",
+        // src/layouts/ecommerce/products/edit-product
         route: "/ecommerce/products/edit-product",
       },
       {
         name: "Product Page",
         key: "product-page",
+        // src/layouts/ecommerce/products/product-page
         route: "/ecommerce/products/product-page",
       },
     ],
@@ -223,10 +249,12 @@ const pageRoutes = [
     name: "Sign In",
     key: "sign-in",
     icon: <IoHome size="16px" color="white" />,
+    // src/layouts/authentication/sign-in
     collapse: [
       {
         name: "Basic",
         key: "basic",
+        // src/layouts/authentication/sign-in/basic
         route: "/authentication/sign-in/basic",
       },
       {
@@ -245,6 +273,7 @@ const pageRoutes = [
     name: "Sign Up",
     key: "sign-up",
     icon: <IoHome size="16px" color="white" />,
+    // src/layouts/authentication/sign-up
     collapse: [
       {
         name: "Basic",
@@ -271,23 +300,27 @@ const pageRoutes = [
         name: "Kanban",
         key: "kanban",
         route: "/applications/kanban",
+        // src/layouts/applications/kanban
         icon: <MdSpaceDashboard size="16px" color={colors.info.main} />,
       },
       {
         name: "Wizard",
         key: "wizard",
         route: "/applications/wizard",
+        // src/layouts/applications/wizard
         icon: <RiProfileLine size="16px" color={colors.info.main} />,
       },
       {
         name: "Data Tables",
         key: "data-tables",
+        // src/layouts/applications/data-tables
         route: "/applications/data-tables",
         icon: <MdTableRows size="16px" color={colors.info.main} />,
       },
       {
         name: "Calendar",
         key: "calendar",
+        // src/layouts/applications/calendar
         route: "/applications/calendar",
         icon: <FaCalendarAlt size="16px" color={colors.info.main} />,
       },
