@@ -38,16 +38,7 @@ import pageRoutes from "page.routes";
 function BasicLayout({ title, description, image, children }) {
   return (
     <PageLayout>
-      <DefaultNavbar
-        routes={pageRoutes}
-        action={{
-          type: "external",
-          route: "https://creative-tim.com/product/vision-ui-dashboard-pro-react",
-          label: "buy now",
-        }}
-        transparent
-        light
-      />
+      
       <VuiBox
         display={{ xs: "none", lg: "block" }}
         width={"calc(100% - 2rem)"}
